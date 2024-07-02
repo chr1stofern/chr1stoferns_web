@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text Styles Notes </title>
+    </head>
+    <body>
+        <!--This is a comment tag-->
+        <h1> Here are some texts in different styles</h1>
+        <h3> This is a normal text </h3>
+        <h3> This is a <b>bold</b> text</h3>
+        <h3> This is an <i>italic</i> text </h3>
+        <h3> This is an <u>underlined</u> text </h3>
+        <h3> This is a <del>deleted</del> text </h3>
+        <h3> This is a <big>big</big> text </h3>
+        <h3> This is a <sub>subscript</sub> text </h3>
+        <h3> This is a <sup>superscript</sup> text </h3>
+        <h3> This is a <tt>monospaced</tt> text </h3>
+        <h3> This is a <mark style="background-color:lavender;">highlighted</mark> text </h3>
+        <br>
+        <h3> This is a <span style="background-color:lavender;">span tagged</span> text </h3>
+        <h3> This is a <div style="background-color:lavender;">div (division) tagged</div> text </h3>
+        
+        <br>
+
+        <h3> This is an unordered list of famous composers and their works </h3>
+        <ul>
+            <li> Mozart </li>
+            <ul> 
+                <li> The Magic Flute </li>
+                <li> Requiem in D Minor </li>
+            </ul>
+            <li> Bach </li>
+            <ul> 
+                <li> The Well Tempered Clavier </li>
+                <li> French Suite </li>
+            </ul>
+            <li> Tchaikovsky </li>
+            <li> Rachmaninoff </li>
+            <li> Chopin </li>
+            <ul> 
+                <li> Fantasy Impromptu </li>
+                <li> Barcarolle </li>
+            </ul>
+            <li> Scarlatti</li>
+            <li> Haydn </li>
+            <ul> 
+                <li> Surprise Symphony </li>
+            </ul>
+            <li> Liszt </li>
+            <ul> 
+                <li> Liebestraum </li>
+            </ul>
+            <li> Debussy </li>
+            <ul> 
+                <li> Clair de Lune </li>
+            </ul>
+        </ul>
+
+        <h3> This is an ordered list of famous composers and their works </h3>
+        <ol>
+            <li> Bach </li>
+            <li> Scarlatti</li>
+            <ul> 
+                <li> The Well Tempered Clavier </li>
+                <li> French Suite </li>
+            </ul>
+            <li> Haydn </li>
+            <ul> 
+                <li> Surprise Symphony </li>
+            </ul>
+            <li> Mozart </li>
+            <ul> 
+                <li> The Magic Flute </li>
+                <li> Requiem in D Minor </li>
+            </ul>
+            <li> Beethoven </li>
+            <ul> 
+                <li> Fate Symphony </li>
+            </ul>
+            <li> Chopin </li>
+            <ul> 
+                <li> Fantasy Impromptu </li>
+                <li> Barcarolle </li>
+            </ul>
+            
+            
+            <li> Liszt </li>
+            <ul> 
+                <li> Liebestraum </li>
+            </ul>
+            <li> Tchaikovsky </li>
+            <li> Rachmaninoff </li>
+            <li> Debussy </li>
+            <ul> 
+                <li> Clair de Lune </li>
+            </ul>
+        </ol>
+
+        <br>
+
+        <h3> This is a description list </h3>
+        <dl style="background-color:antiquewhite; border: 2px solid;"> 
+            <dt> This is a description term </dt>
+            <dd> This is a description definition </dd>
+            <dt> Baroque Period </dt>
+            <dd> Bach </dd>
+            <dd> Scarlatti </dd>
+            <dd> Haydn </dd>
+            <dt> Classical Period </dt>
+            <dd> Mozart </dd>
+            <dd> Beethoven </dd>
+            <dt> Romantic Period </dt>
+            <dd> Chopin </dd>
+            <dd> Liszt </dd>
+        </dl>
+        </dl>
+
+        <br>
+
+        <h3> This is a table </h3>
+        <table border="1" style="background-color:lightskyblue">
+            <tr>
+                <th width="300"> This is a table header in a table row </th>
+                <th width="200"> Baroque Period </th>
+                <th width="200"> Classical Period </th>
+                <th width="200"> Romantic Period </th>
+            </tr>
+            <tr align="center" style="background-color:aliceblue">
+                <td> This is a table data in a table row </td>
+                <td> Bach </td>
+                <td> Mozart </td>
+                <td> Chopin </td>
+            </tr>
+
+        </table>
+
+        <br>
+        
+        <h3> This is a button that goes to index.html </h3>
+        <a href="index.html"
+        target="blank"
+        title="Goes to index.html">
+        <button onclick="buttonClicked()" style="font-size:25px;background-color:lavender;color:darkviolet;border-radius:25px"> This is a button </button>
+        </a>
+        <p id="buttonAction"> Button Not Clicked </p>
+        <script>
+            function buttonClicked(){
+                document.getElementById("buttonAction").innerHTML = "Button Clicked"
+            }
+        </script>
+    </body>
+</html>
