@@ -67,3 +67,115 @@ in different font-face if the font is not variable */
     font-family: "Montserrat Regular", arial, sans-serif;
     font-style: normal;
 }
+
+#border0A{
+    border-style:solid ;
+    border-width: 3px ;
+    border-color: hsl(182, 39%, 65%);
+    border-radius: 5px;
+}
+/* this can be simplified with
+the shorthand syntax as follows */
+#border0B{
+    border:solid 3px hsl(182, 39%, 65%);
+    border-radius: 5px;
+}
+#border0C{
+    border-bottom: solid 3px hsl(182, 39%, 65%);
+    border-top: dashed 3px hsl(182, 39%, 65%);
+    border-left: inset 3px hsl(182, 39%, 65%);
+    border-right: outset 3px hsl(182, 39%, 65%);
+    border-radius: 5px;
+}
+
+#border1{
+    border-style:dashed ;
+}
+#border2{
+    border-style:dotted ;
+}
+#border3{
+    border-style:double ;
+}
+#border4{
+    border-style:groove ;
+}
+#border5{
+    border-style:ridge ;
+}
+#border6{
+    border-style:inset ;
+}
+#border7{
+    border-style:outset ;
+}
+#border8{
+    border-style:none ;
+}
+#border9{
+    border-style:hidden ;
+}
+#border10{
+    border-style:inherit ;
+}
+#border11{
+    border-style:initial ;
+}
+
+#shadowText{
+    color:mediumslateblue;
+    text-shadow: 2px 2px 8px rgba(61, 49, 133, 0.753), 
+    0px 25px 10px rgba(103, 86, 199, 0.753);
+    /* first parameter is horizontal offset
+    second is vertical offset 
+    third is blur */
+    /* a second shadow can be added after a "," */
+}
+#shadowBox{
+    width: 150px;
+    height: 40px;
+    background-color: mediumslateblue;
+    box-shadow: 10px 10px 10px rgba(61, 49, 133, 0.753);
+}
+
+#margin1{
+    margin: 0px;
+}
+#margin2{
+    margin: 10px;
+}
+#margin3{
+    margin-top: 50px;
+}
+#margin4{
+    margin-bottom: 50px;
+}
+#margin5{
+    margin-left: 50px;
+}
+#margin6{
+    margin-right: 50px;
+}
+#margin7{
+    border: 5px solid;
+    width:500px;
+    height:60px;
+    margin-left: auto;
+}
+#margin8{
+    border: 5px solid;
+    width:500px;
+    height:60px;
+    margin: auto;
+}
+/* if no direction is specifed, margin will just 
+apply the condition evenly on all sides*/
+
+#floatImg1{
+    float: left;
+    margin-right: 10px;
+}
+#floatImg2{
+    float: right;
+    margin-left: 10px;
+}
